@@ -1,23 +1,25 @@
 📘 Attendance Management System
-1️⃣ Description
+🌟 1️⃣ Description
 
-The Attendance Management System is a web-based application developed for schools to manage and track student attendance efficiently.
+The Attendance Management System is a modern web-based application designed to simplify and automate student attendance tracking in schools and colleges.
 
-This system allows:
+Instead of maintaining manual registers, this system allows teachers to digitally record and manage attendance with accuracy and efficiency.
 
-Teachers to mark daily attendance
+🎯 The system enables teachers to:
 
-View attendance records by date
+✅ Mark daily attendance
 
-Generate weekly defaulter lists (below 75%)
+📅 View attendance records by date
 
-Export attendance and defaulter reports to Excel
+📊 Generate weekly defaulter lists (below 75%)
 
-Maintain class-wise and division-wise records
+📥 Export attendance and defaulter reports to Excel
 
-It reduces manual register work and automates attendance calculation.
+🏫 Maintain class-wise and division-wise records
 
-2️⃣ Technologies Used
+✨ This system reduces paperwork, minimizes errors, and automates attendance calculations.
+
+🛠 2️⃣ Technologies Used
 🔹 Frontend
 
 HTML5
@@ -38,13 +40,13 @@ MySQL
 
 🔹 Additional Libraries
 
-mysql-connector-python (Database connection)
+mysql-connector-python – Database connectivity
 
-pandas (Excel export)
+pandas – Excel report generation
 
-BytesIO (Memory file handling)
+BytesIO – In-memory file handling
 
-3️⃣ Project Structure
+🗂 3️⃣ Project Structure
 attendance-system/
 │
 ├── app.py
@@ -64,78 +66,76 @@ attendance-system/
 │   └── (CSS / Images if any)
 │
 └── README.md
-4️⃣ Panel Information
-👨‍🏫 Teacher Panel
+👨‍🏫 4️⃣ Panel Information
+🔐 Teacher Panel
 
 Teachers can:
 
-Login securely
+🔑 Login securely
 
-Select class & division
+🏫 Select class & division
 
-Mark daily attendance
+📝 Mark daily attendance
 
-View attendance by date
+📊 View attendance by date
 
-Generate weekly defaulters (<75%)
+⚠ Generate weekly defaulters (<75%)
 
-Export reports to Excel
+📥 Export reports to Excel
 
-🔐 Login System
+🔒 Login System
 
-Currently:
-
-Session-based login
+Session-based authentication
 
 teacher_id stored in session
 
-(Can be upgraded to real teacher authentication system)
+Can be upgraded to full authentication system with password hashing
 
-5️⃣ Features
+🚀 5️⃣ Features
 ✅ 1. Mark Attendance
 
 Select standard & division
 
-Mark Present/Absent
+Mark students as Present/Absent
 
-Prevents duplicate marking for same date
+Prevents duplicate attendance for the same date
 
 ✅ 2. View Attendance Records
 
-Filter by:
+Filter attendance using:
 
-Date
+📅 Date
 
-Standard
+🏫 Standard
 
-Division
+🅰 Division
 
-Shows:
+Displays:
 
-Total students
+Total Students
 
-Present count
+Present Count
 
-Absent count
+Absent Count
 
 ✅ 3. Export Attendance
 
-Export daily attendance
+Export daily attendance to Excel
 
-Excel file generated dynamically
+Automatically generated file
 
-File name format:
+Example file name:
 
 Attendance_10A_2026-02-23.xlsx
 ✅ 4. Weekly Defaulter List
 
 Automatically calculates last 7 days
 
-Students below 75% attendance
+Identifies students below 75% attendance
 
 Displays:
 
-Roll number
+Roll Number
 
 Name
 
@@ -143,32 +143,29 @@ Attendance Percentage
 
 ✅ 5. Export Weekly Defaulters
 
-Generates Excel file
+Generates Excel report
 
 Sorted by lowest percentage
 
-File name format:
+Example file name:
 
 Weekly_Defaulters_10A.xlsx
+▶️ 6️⃣ How to Run the Project
+🧩 Step 1: Clone the Repository
+https://github.com/Sies109/Attendance-Management-System.git
+🧩 Step 2: Install Dependencies
+pip install flask
+pip install mysql-connector-python
+pip install pandas
+🧩 Step 3: Setup MySQL Database
 
-6️⃣ How to Run the Project
+Open MySQL
 
-Install required libraries:
+Create database
 
-pip install flask mysql-connector-python pandas openpyxl
+Run attendance_db.sql file
 
-Make sure MySQL is running and the database attendance_db is created.
-
-Update your MySQL username and password inside app.py.
-
-Open terminal in the project folder.
-
-Run the application:
-
+🧩 Step 4: Run the Application
 python app.py
-
-Open your browser and go to:
-
-http://127.0.0.1:5000
-
-Done ✅
+🌍 Step 5: Open in Browser
+http://127.0.0.1:5000/
