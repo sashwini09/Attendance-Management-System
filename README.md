@@ -1,4 +1,5 @@
 📘 Attendance Management System
+
 🌟 1️⃣ Description
 
 The Attendance Management System is a modern web-based application designed to simplify and automate student attendance tracking in schools and colleges.
@@ -18,6 +19,7 @@ Instead of maintaining manual registers, this system allows teachers to digitall
 🏫 Maintain class-wise and division-wise records
 
 ✨ This system reduces paperwork, minimizes errors, and automates attendance calculations.
+
 
 🛠 2️⃣ Technologies Used
 🔹 Frontend
@@ -46,6 +48,7 @@ pandas – Excel report generation
 
 BytesIO – In-memory file handling
 
+
 🗂 3️⃣ Project Structure
 attendance-system/
 │
@@ -66,6 +69,7 @@ attendance-system/
 │   └── (CSS / Images if any)
 │
 └── README.md
+
 👨‍🏫 4️⃣ Panel Information
 🔐 Teacher Panel
 
@@ -150,6 +154,7 @@ Sorted by lowest percentage
 Example file name:
 
 Weekly_Defaulters_10A.xlsx
+
 ▶️ 6️⃣ How to Run the Project
 🧩 Step 1: Clone the Repository
 https://github.com/Sies109/Attendance-Management-System.git
