@@ -150,3 +150,25 @@ Sorted by lowest percentage
 File name format:
 
 Weekly_Defaulters_10A.xlsx
+
+6️⃣ How to Run the Project
+
+Install required libraries:
+
+pip install flask mysql-connector-python pandas openpyxl
+
+Make sure MySQL is running and the database attendance_db is created.
+
+Update your MySQL username and password inside app.py.
+
+Open terminal in the project folder.
+
+Run the application:
+
+python app.py
+
+Open your browser and go to:
+
+http://127.0.0.1:5000
+
+Done ✅
