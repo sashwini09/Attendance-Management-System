@@ -11,9 +11,11 @@ app.secret_key = os.environ.get("SECRET_KEY", "change-me-in-production")
 # ---------- DATABASE CONNECTION ----------
 db = mysql.connector.connect(
     host=os.environ.get("DB_HOST", "localhost"),
+    port=int(os.environ.get("DB_PORT", "3306")),
     user=os.environ.get("DB_USER", "root"),
     password=os.environ.get("DB_PASSWORD", ""),
-    database=os.environ.get("DB_NAME", "attendance_db")
+    database=os.environ.get("DB_NAME", "attendance_db"),
+    ssl_verify_cert=True
 )
 cursor = db.cursor(dictionary=True, buffered=True)
 
